@@ -13,7 +13,7 @@ You'll notice the playback rate goes back to 1.0.
 
 # Cause
 It turns out the following sequence is problematic:
-```
+```typescript
   await TrackPlayer.setRate(2);
   await TrackPlayer.play();
   await TrackPlayer.seekTo(position + 15);
